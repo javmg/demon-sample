@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="#{company}">
+        Company AG
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+<p th:text="#{greeting(${notification.userFirstName})}">
+    Dear user,
+</p>
+
+<p th:text="#{message(${notification.numPending})}">
+    You have {2} pending messages
+</p>
+
+<p th:text="#{closure}">">
+    Thank you
+</p>
+
+</body>
+</html>
